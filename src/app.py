@@ -11,7 +11,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-
+#Feito para deixar as bases armazenadas em cache
+@st.cache
 def load_data(caminho):
     dados = pd.read_csv(caminho)
     return dados
