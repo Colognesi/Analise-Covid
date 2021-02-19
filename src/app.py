@@ -58,10 +58,10 @@ def main():
     st.markdown('## Dados adquiridos através do site: https://transparencia.registrocivil.org.br/especial-covid')
     st.markdown('### O foco do projeto é verificar os óbitos que ocorreram e quais doenças o causaram nos anos de 2019 e 2020')
 
-    opcao_1 = st.selectbox('Selecione o tipo de doença',
+    opcao_1 = st.sidebar.selectbox('Selecione o tipo de doença',
                 tipo_doenca)
 
-    opcao_2 = st.selectbox('Selecione o estado', 
+    opcao_2 = st.sidebar.selectbox('Selecione o estado', 
                 unidade_federativa)
 
     figura = grafico_comparativo(obitos_2019, obitos_2020, opcao_1, opcao_2)
